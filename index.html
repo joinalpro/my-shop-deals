@@ -5,6 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Shop Deals</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="logo flex justify-center items-center gap-1 shadow py-3">
+      <img src="./assets/logo.png" class="w-12" alt="" />
+      <div>
+        <h2 class="text-pink-500 text-xl">
+          Deashi <span class="font-bold">Deals</span>
+        </h2>
+        <p class="text-sm text-gray-500">Cheap Price , Best Quality</p>
+      </div>
+    </header>
+    <main>
+      <section class="hidden" id="banner">
+        <!-- header banner section -->
+        <div class="flex flex-col justify-center items-center space-y-5">
+          <h1 class="text-4xl font-bold text-center pt-15">
+            Purchase TK 200 or above & get <br />
+            <span class="text-pink-500">20% off</span>
+          </h1>
+          <div class="flex justify-center items-center gap-10">
+            <p>use Promo Code</p>
+            <button class="btn bg-pink-500 text-white">SELL200</button>
+          </div>
+          <img src="./assets/hero-bg.png" alt="" />
+        </div>
+      </section>
+      <!-- product container start here -->
+      <section
+        id="products-container"
+        class="w-11/12 mx-auto grid grid-cols-12 gap-8"
+      >
+        <section id="product-box" class="col-span-9">
+          <!-- kitchen ware -->
+          <div class="kitchen">
+            <h1 class="text-3xl font-bold">Kitchenware</h1>
+          </div>
+          <!-- All Products here -->
+          <h1 class=""></h1>
+        </section>
+        <aside id="cart-box" class="bg-green-100 col-span-3">
+          <h1>Cart</h1>
+        </aside>
+      </section>
+    </main>
+  </body>
 </html>
